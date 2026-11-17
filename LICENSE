@@ -1,0 +1,52 @@
+MIT License
+
+Copyright (c) 2026 YKWModelTool Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+Third-Party Notices & Attributions
+================================================================================
+
+This repository bundles the runtime assemblies required by YKWModelTool. Each
+third-party component retains its original copyright and license terms:
+
+1. Metanoia (Metanoia\Metanoia.exe, Metanoia\lib\HSDLib.dll,
+             Metanoia\lib\DivaAlchemy.dll)
+   - Author / Project: ploaj (https://github.com/ploaj/Metanoia)
+   - Note: Metanoia\Metanoia.exe includes a 1-method IL patch at file offset
+     0xD0F fixing FormatManager.GetAnimationExtensionFilter() so animation files
+     can be browsed reliably.
+
+2. OpenTK (Metanoia\OpenTK.dll, Metanoia\OpenTK.GLControl.dll)
+   - https://opentk.net/
+   - Copyright (c) 2006 - 2016 Stefanos Apostolopoulos <stapostol@gmail.com>
+     for the Open Toolkit library.
+
+3. Newtonsoft.Json / Json.NET (Metanoia\Newtonsoft.Json.dll)
+   - Copyright (c) James Newton-King 2008
+
+4. DockPanel Suite (Metanoia\WeifenLuo.WinFormsUI.Docking.dll)
+   - Copyright (c) Weifen Luo and other contributors 2007-2018
+
+External tools (not bundled in this repository):
+- Blender (https://www.blender.org/) — Used externally at runtime to assemble
+  GLB, FBX, and .blend files from exported COLLADA models and animations.
+- Kuriimu2 (https://github.com/FanTranslatorsInternational/Kuriimu2) — Used
+  for XPCK (.xc/.xv) archive inspection and format verification.

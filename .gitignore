@@ -1,0 +1,33 @@
+# Yo-kai Watch / Level-5 game archives & raw extracted files (NO game assets)
+*.xc
+*.xv
+*.xi
+*.prm
+*.mbn
+*.mtn2
+*.mtn3
+*.mtninf
+*.mtninf2
+RES.bin
+raw/
+
+# Exported 3D models, animations & textures
+*.glb
+*.fbx
+*.blend
+*.blend1
+*.dae
+*.smd
+*.png
+exports/
+
+# Yo-kai Watch character asset folders
+x[0-9]*/
+y[0-9]*/
+
+# Build, debug, and editor artifacts
+*.pdb
+*.bak
+*.user
+*.suo
+.vs/
